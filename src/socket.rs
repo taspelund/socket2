@@ -1640,7 +1640,6 @@ impl Socket {
         target_os = "fuchsia",
         target_os = "redox",
         target_os = "solaris",
-        target_os = "illumos",
         target_os = "haiku",
         target_os = "wasi",
     )))]
@@ -1660,7 +1659,6 @@ impl Socket {
         target_os = "fuchsia",
         target_os = "redox",
         target_os = "solaris",
-        target_os = "illumos",
         target_os = "haiku",
         target_os = "wasi",
     )))]

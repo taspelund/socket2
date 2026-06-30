@@ -1523,7 +1523,6 @@ test!(IPv4 ttl_v4, set_ttl_v4(40));
     target_os = "fuchsia",
     target_os = "redox",
     target_os = "solaris",
-    target_os = "illumos",
     target_os = "haiku",
     target_os = "cygwin",
     target_os = "wasi",
@@ -1577,7 +1576,8 @@ test!(IPv6 only_v6, set_only_v6(false));
         target_os = "linux",
         target_os = "macos",
         target_os = "netbsd",
-        target_os = "openbsd"
+        target_os = "openbsd",
+        target_os = "illumos"
     )
 ))]
 test!(IPv6 tclass_v6, set_tclass_v6(96));

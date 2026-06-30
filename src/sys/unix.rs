@@ -209,7 +209,6 @@ pub(crate) use libc::IP_RECVTOS;
     target_os = "redox",
     target_os = "solaris",
     target_os = "haiku",
-    target_os = "illumos",
     target_os = "wasi",
 )))]
 pub(crate) use libc::IP_TOS;
@@ -2643,6 +2642,7 @@ impl crate::Socket {
             target_os = "netbsd",
             target_os = "openbsd",
             target_os = "cygwin",
+            target_os = "illumos",
         )
     ))]
     pub fn tclass_v6(&self) -> io::Result<u32> {
@@ -2668,6 +2668,7 @@ impl crate::Socket {
             target_os = "netbsd",
             target_os = "openbsd",
             target_os = "cygwin",
+            target_os = "illumos",
         )
     ))]
     pub fn set_tclass_v6(&self, tclass: u32) -> io::Result<()> {
